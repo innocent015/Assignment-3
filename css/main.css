@@ -1,0 +1,230 @@
+/* HTML and Body element */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for all content */
+.container {
+  /* Border */
+  border: 1px solid #f00; /* Red border */
+
+  /* Margins */
+  margin: 10px;
+
+  /* Padding */
+  padding: 10px;
+
+  /* Width & Max-width */
+  width: 100%;
+  max-width: 1200px;
+
+  /* Font using the shorthand property */
+  font: normal normal 16px/1.5 Arial, sans-serif;
+
+  /* Flex properties to organize content and make footer stick to bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header, nav, and footer elements */
+header, nav, footer {
+  /* Margins */
+  margin: 10px;
+
+  /* Padding */
+  padding: 10px;
+}
+
+/* Aside and main elements */
+aside, main {
+  /* Float */
+  float: left;
+
+  /* Padding */
+  padding: 10px;
+}
+
+aside {
+  /* Width */
+  width: 33.33%;
+
+  /* Margin */
+  margin-right: 1%;
+}
+
+main {
+  /* Width */
+  width: 65.67%;
+}
+
+/* Header element */
+header {
+  /* Background color */
+  background-color: #00f; /* Blue background */
+}
+
+/* h1 heading */
+header h1 {
+  /* Positioning */
+  display: inline-block;
+
+  /* Styling */
+  color: #fff; /* White text color */
+  font-size: 24px;
+}
+
+/* Logo */
+header a img {
+  /* Positioning */
+  float: right;
+
+  /* Styling */
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation */
+nav ul {
+  /* To Align the links to the right */
+  text-align: right;
+}
+
+nav ul li {
+  /* To Display the list items inline */
+  display: inline;
+}
+
+nav ul li a {
+  /* Removing the underline of the links */
+  text-decoration: none;
+
+  /* Enlarge the font size */
+  font-size: 20px;
+
+  /* Set margins, padding, and borders */
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #00f; /* Blue border */
+
+  /* Background and text color */
+  background-color: #f00; /* Red background */
+  color: #fff; /* White text color */
+
+  /* Appear as buttons */
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  /* Changing the background color and the text color when hovering */
+  background-color: #fff; /* White background */
+  color: #00f; /* Blue text color */
+}
+
+/* Aside */
+aside h2 {
+  /* Styling */
+  color: #00f; /* Blue text color */
+  font-size: 20px;
+}
+
+aside ul {
+  /* Removing bullet points */
+  list-style-type: none;
+
+  /* Increasing the line spacing */
+  line-height: 1.5;
+}
+
+/* Main section */
+main h2 {
+  /* Styling */
+  color: #00f; /* Blue text color */
+  font-size: 20px;
+}
+
+main p {
+  /* Styling */
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+main figure {
+  /* Styling */
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #00f; /* Blue border */
+}
+
+main img, main iframe {
+  width: 30%;
+  height: auto;
+  background-color: #f00; /* Red background */
+}
+
+main figcaption {
+  /* Styling */
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  text-align: center;
+  background-color: #00f; /* Blue background */
+  margin-top: auto;
+}
+
+/* Form styling */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font: normal normal 16px/1.5 Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"], form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00f; /* Blue border */
+  font: normal normal 16px/1.5 Arial, sans-serif;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #00f; /* Blue border */
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+form legend {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form input[type="submit"], form input[type="reset"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f00; /* Red background */
+  color: #fff; /* White text color */
+  border: none;
+  cursor: pointer;
+  font: normal normal 16px/1.5 Arial, sans-serif;
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+  background-color: #fff; /* White background */
+  color: #00f; /* Blue text color */
+  border: 1px solid #00f; /* Blue border */
+}

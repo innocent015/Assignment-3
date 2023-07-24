@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--
+    Author: Yahya
+    Email: yjama8876@conestogac.on.ca
+  -->
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <a href="#"><img src="images/contact.png" alt="Contact"></a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <body onload="document.getElementById('name').focus();">
+    <main>
+      <h2>Contact Form</h2>
+      
+      <form autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+          
+          <label for="employment-status">Employment Status:</label>
+          <select id="employment-status" name="employment-status" required>
+            <option selected>Select Option</option>
+            <option>Student</option>
+            <option>Employed Full-time</option>
+            <option>Employed Part-time</option>
+            <option>Retired</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+        
+        <fieldset>
+          <legend>How did you hear about our site?</legend>
+          
+          <input type="radio" id="social-media" name="source" required>
+          <label for="social-media">Social Media</label>
+          
+          <input type="radio" id="friend" name="source" required>
+          <label for="friend">Friend</label>
+          
+          <input type="radio" id="search-engine" name="source" required>
+          <label for="search-engine">Search Engine</label>
+          
+          <input type="radio" id="other-source" name="source" required>
+          <label for="other-source">Other</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Tell Us what you think!</legend>
+          
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments here..." required></textarea>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Submit</legend>
+          
+          <input type="checkbox" id="not-robot" name="not-robot">
+          <label for="not-robot">I am not a robot.</label>
+          
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </fieldset>
+      </form>
+    </main>
+  </body>
+  
+  
+  <footer>
+    <p>&copy; 2023 Yahya | 8868876</p>
+  </footer>
+
+</body>
+
+</html>
